@@ -8,9 +8,9 @@ class Position(models.Model):
 
 class Employee(models.Model):
     Fullname = models.CharField(max_length=250)
-    Emp_code = models.IntegerField
+    Emp_code = models.CharField(max_length=5)
     position = models.ForeignKey(Position, on_delete= models.CASCADE)
-    mobile = models.IntegerField
+    mobile = models.CharField(max_length=15)
     Address =  models.CharField(max_length=250)
     EMail = models.EmailField
 

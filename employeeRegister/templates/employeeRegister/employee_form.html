@@ -1,16 +1,12 @@
 {% extends 'employeeRegister/base.html' %}
+{% load crispy_forms_tags %}
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    {% block content %}
-        <h1>this is the form page</h1>
-    {% endblock content %}
-</body>
-</html>
+{% block content %}
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+    {{form|crispy}}
+</form>
+
+{% endblock content %}
+ 
