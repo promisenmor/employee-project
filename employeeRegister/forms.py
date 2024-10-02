@@ -7,3 +7,4 @@ class EmployeeForm(forms.ModelForm):
     class Meta:
         model = Employee
         fields = ('Fullname', 'Emp_code', 'mobile', 'position')
+        fields = 
