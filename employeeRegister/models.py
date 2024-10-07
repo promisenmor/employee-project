@@ -18,3 +18,4 @@ class Employee(models.Model):
     EMail = models.EmailField
 
 
+
